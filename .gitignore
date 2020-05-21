@@ -13,6 +13,30 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# Custom files
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.props
+*.lnk
+licence for header.txt
+
+# wip folders
+
+
+# private folders
+extlibs/
+backup/
+backup_*/
+test/
+test_*/
+temp/
+temp_*/
+temp_storage/
+PropertySheets/
+priv/
+priv_*/
+
 # Mono auto generated files
 mono_crash.*
 
@@ -21,6 +45,8 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+[Dd]ebugStatic/
+[Rr]eleaseStatic/
 x64/
 x86/
 [Aa][Rr][Mm]/
