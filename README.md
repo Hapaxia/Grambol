@@ -21,21 +21,21 @@ The main base class, Symbol, is all that is required. It provides all the of the
 
 ### Provided Symbol Groups
 These are groups of symbols that can be included separately. Most will have more specific controls to allow intuitive use. These serve as both usable symbols and examples of how derived classes can build upon the base classes.
-- Basics
+- Basics  
 The standard basic stuff such as rectangle, ellipse, star, and rounded rectangle.
-- Arrows
+- Arrows  
 Multiple, customisable types.
-- Icons
+- Icons  
 Symbols commonly used for icons.
-- Card Suits
+- Card Suits  
 Usual symbols for the suits used in playing cards.
-- Warnings
+- Warnings  
 Symbols used for warnings.
-- Crosshairs
+- Crosshairs  
 Customisable crosshair symbols.
-- Misc
+- Misc  
 Miscellaneous symbols that may not fit into another group.
-- others...
+- others...  
 Other symbols and groups not yet decided and open to suggestions.
 
 ## Note
