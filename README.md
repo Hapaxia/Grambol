@@ -1,6 +1,6 @@
 # Grambol
 
-![Grambol](https://i.imgur.com/9JlxhLD.png)
+![Grambol](https://i.imgur.com/WGNwz2J.png)
 
 by Hapaxia
 October 2020
