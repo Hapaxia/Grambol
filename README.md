@@ -1,5 +1,7 @@
 # Grambol
 
+![Grambol](https://i.imgur.com/9JlxhLD.png)
+
 by Hapaxia
 October 2020
 > github.com/Hapaxia  
@@ -13,9 +15,7 @@ The base class/classes gives similar features and interface to SFML's own Shape 
 
 Each symbol is set up in a similar way to a rectangle; it has a width and height. All point calculations in Grambol are ratios - in the range of 0 to 1. That is the x co-ordinate 0-1 expands to 0-width and the y co-ordinate 0-1 expands to 0-height. This "rectangle" is the base two-dimensional space in which the symbol is contained. The points can use this information however they choose - including expanding outside of this rectangle.
 
-Derived classes can easily optionally expose extra controls that make controlling the symbol's shape and parameters more intuitive. For example, a simple "thick line" symbol would be a basic rectangle but could include the ability to set its position and rotation based of start and end control points. Another example would be allowing a circle or ellipse symbol to be sized by its radius/radii.
-
-The main base class, Symbol, is all that is required. It provides all the of the base code to use. However, two other "base" classes are provided: PlainSymbol and FullSymbol. These are derived from Symbol but include some specific features. PlainSymbol simply adds setting and getting of the symbol's (single) colour. This is perfect for single colour symbols. FullSymbol adds ability to set a palette of multiple colours, allowing each point to use any one of these colours. This allows a single symbol to be multi-coloured.
+For more information, please see the [Wiki]
 
 ## Still To Come
 
@@ -41,3 +41,7 @@ Other symbols and groups not yet decided and open to suggestions.
 ## Note
 
 Grambol requires SFML 2 (www.sfml-dev.org)
+
+
+
+[Wiki]: https://github.com/Hapaxia/Grambol/wiki
