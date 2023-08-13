@@ -5,7 +5,8 @@
 by Hapaxia
 October 2020
 > github.com/Hapaxia  
-> twitter.com/Hapaxiation
+> twitter.com/Hapaxiation  
+> mastodon.world/@hapaxia
 
 ## Introduction
 
