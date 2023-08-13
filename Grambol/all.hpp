@@ -31,6 +31,7 @@
 #define GRAMBOL_ALL_HPP
 
 #include "bases.hpp"
+#include "Arrows.hpp"
 #include "Basics.hpp"
 
 #endif // GRAMBOL_ALL_HPP
