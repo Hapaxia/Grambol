@@ -5,8 +5,8 @@
 by Hapaxia
 October 2020
 > github.com/Hapaxia  
-> twitter.com/Hapaxiation  
-> mastodon.world/@hapaxia
+> mastodon.world/@hapaxia  
+> twitter.com/Hapaxiation
 
 ## Introduction
 
@@ -41,7 +41,9 @@ Other symbols and groups not yet decided and open to suggestions.
 
 ## Note
 
-Grambol requires SFML 2 (www.sfml-dev.org)
+Grambol requires SFML 3 (www.sfml-dev.org) and therefore C++17.
+To use with SFML 2, you can use the "sfml2" branch.
+
 
 
 

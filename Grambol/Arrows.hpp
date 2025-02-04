@@ -5,7 +5,7 @@
 //
 // Basics
 //
-// Copyright(c) 2023-2024 M.J.Silk
+// Copyright(c) 2023-2025 M.J.Silk
 //
 // This software is provided 'as-is', without any express or implied
 // warranty. In no event will the authors be held liable for any damages
@@ -81,7 +81,7 @@ public:
 		constexpr float zeroEpsilon{ 0.00001f };
 		if (abs(direction.x) < zeroEpsilon && abs(direction.y) < zeroEpsilon)
 		{
-			setRotation(0.f);
+			setRotation(sf::degrees(0.f));
 			setOrigin({ 0.f, 0.f });
 			setSize({ 0.f, 0.f });
 			priv_update();
@@ -93,7 +93,7 @@ public:
 		const float directionAngleInRadians{ std::atan2(directionUnit.y, directionUnit.x) };
 		const float directionAngle{ directionAngleInRadians * constants::degreesFromRadiansMultiplier };
 		setOrigin({ 0.f, getSize().y / 2.f });
-		setRotation(directionAngle);
+		setRotation(sf::degrees(directionAngle));
 		setSize({ directionLength, getSize().y });
 		priv_update();
 	}
@@ -102,8 +102,8 @@ public:
 		sf::Transform transform{ getTransform() };
 		const sf::Vector2f size{ getSize() };
 		const float centerY{ size.y / 2.f };
-		setStartControlPoint(transform.transformPoint(0.f, centerY));
-		setEndControlPoint(transform.transformPoint(size.x, centerY));
+		setStartControlPoint(transform.transformPoint({ 0.f, centerY }));
+		setEndControlPoint(transform.transformPoint({ size.x, centerY }));
 	}
 
 private:
