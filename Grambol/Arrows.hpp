@@ -221,7 +221,7 @@ private:
 
 
 
-sf::Vector2f Arrow<Selection::Arrow::Dart>::priv_getVertexPosition(const std::size_t vertexIndex) const
+inline sf::Vector2f Arrow<Selection::Arrow::Dart>::priv_getVertexPosition(const std::size_t vertexIndex) const
 {
 	//const sf::Vector2f size{ getSize() };
 	const sf::Vector2f center{ 0.5f, 0.5f };
@@ -239,7 +239,7 @@ sf::Vector2f Arrow<Selection::Arrow::Dart>::priv_getVertexPosition(const std::si
 	}
 }
 
-sf::Vector2f Arrow<Selection::Arrow::Standard>::priv_getVertexPosition(const std::size_t vertexIndex) const
+inline sf::Vector2f Arrow<Selection::Arrow::Standard>::priv_getVertexPosition(const std::size_t vertexIndex) const
 {
 	const sf::Vector2f size{ getSize() };
 	const float centerY{ 0.5f };
@@ -284,7 +284,7 @@ sf::Vector2f Arrow<Selection::Arrow::Standard>::priv_getVertexPosition(const std
 	}
 }
 
-sf::Vector2f Arrow<Selection::Arrow::StandardDoubleEnded>::priv_getVertexPosition(const std::size_t vertexIndex) const
+inline sf::Vector2f Arrow<Selection::Arrow::StandardDoubleEnded>::priv_getVertexPosition(const std::size_t vertexIndex) const
 {
 	const sf::Vector2f size{ getSize() };
 	const float centerY{ 0.5f };

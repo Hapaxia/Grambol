@@ -228,7 +228,7 @@ private:
 
 
 
-sf::Vector2f Basic<Selection::Basic::Rectangle>::priv_getVertexPosition(const std::size_t vertexIndex) const
+inline sf::Vector2f Basic<Selection::Basic::Rectangle>::priv_getVertexPosition(const std::size_t vertexIndex) const
 {
 	switch (vertexIndex)
 	{
@@ -244,7 +244,7 @@ sf::Vector2f Basic<Selection::Basic::Rectangle>::priv_getVertexPosition(const st
 	}
 }
 
-sf::Vector2f Basic<Selection::Basic::Ellipse>::priv_getVertexPosition(const std::size_t vertexIndex) const
+inline sf::Vector2f Basic<Selection::Basic::Ellipse>::priv_getVertexPosition(const std::size_t vertexIndex) const
 {
 	const sf::Vector2f center{ 0.5f, 0.5f };
 
@@ -260,7 +260,7 @@ sf::Vector2f Basic<Selection::Basic::Ellipse>::priv_getVertexPosition(const std:
 	return{ 1.f, center.y };
 }
 
-sf::Vector2f Basic<Selection::Basic::Star>::priv_getVertexPosition(const std::size_t vertexIndex) const
+inline sf::Vector2f Basic<Selection::Basic::Star>::priv_getVertexPosition(const std::size_t vertexIndex) const
 {
 	const sf::Vector2f center{ 0.5f, 0.5f };
 
@@ -275,7 +275,7 @@ sf::Vector2f Basic<Selection::Basic::Star>::priv_getVertexPosition(const std::si
 	return{ center.x + center.x * radius * std::cos(radians), center.y - center.y * radius * std::sin(radians) };
 }
 
-sf::Vector2f Basic<Selection::Basic::Frame>::priv_getVertexPosition(const std::size_t vertexIndex) const
+inline sf::Vector2f Basic<Selection::Basic::Frame>::priv_getVertexPosition(const std::size_t vertexIndex) const
 {
 	const sf::Vector2f size{ getSize() };
 	const sf::Vector2f thickness{ m_thickness / size.x, m_thickness / size.y };
@@ -311,7 +311,7 @@ sf::Vector2f Basic<Selection::Basic::Frame>::priv_getVertexPosition(const std::s
 	}
 }
 
-sf::Vector2f Basic<Selection::Basic::RoundedRectangle>::priv_getVertexPosition(const std::size_t vertexIndex) const
+inline sf::Vector2f Basic<Selection::Basic::RoundedRectangle>::priv_getVertexPosition(const std::size_t vertexIndex) const
 {
 	const sf::Vector2f size{ getSize() };
 	const sf::Vector2f cornerRadius{ m_cornerRadius.x / size.x, m_cornerRadius.y / size.y };
@@ -338,7 +338,7 @@ sf::Vector2f Basic<Selection::Basic::RoundedRectangle>::priv_getVertexPosition(c
 	return{ x, y };
 }
 
-sf::Vector2f Basic<Selection::Basic::RoundedFrame>::priv_getVertexPosition(const std::size_t vertexIndex) const
+inline sf::Vector2f Basic<Selection::Basic::RoundedFrame>::priv_getVertexPosition(const std::size_t vertexIndex) const
 {
 	const sf::Vector2f size{ getSize() };
 	sf::Vector2f thickness{ m_thickness / size.x, m_thickness / size.y };
@@ -384,7 +384,7 @@ sf::Vector2f Basic<Selection::Basic::RoundedFrame>::priv_getVertexPosition(const
 	return{ x, y };
 }
 
-sf::Vector2f Basic<Selection::Basic::Parallelogram>::priv_getVertexPosition(const std::size_t vertexIndex) const
+inline sf::Vector2f Basic<Selection::Basic::Parallelogram>::priv_getVertexPosition(const std::size_t vertexIndex) const
 {
 	const bool positiveSkew{ m_skew >= 0.f };
 	if (m_skew < 0.f)
