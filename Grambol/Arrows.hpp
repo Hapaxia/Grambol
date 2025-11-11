@@ -37,8 +37,6 @@
 
 #include <cmath>
 
-#include <iostream>
-
 namespace grambol
 {
 
