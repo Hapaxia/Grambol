@@ -34,5 +34,6 @@
 #include "Arrows.hpp"
 #include "Basics.hpp"
 #include "BasicsGradient.hpp"
+#include "CardSuits.hpp"
 
 #endif // GRAMBOL_ALL_HPP
