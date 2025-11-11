@@ -105,7 +105,7 @@ class CardSuit<Selection::CardSuit::Club> : public PlainSymbol
 public:
 	CardSuit() : PlainSymbol(sf::PrimitiveType::TriangleFan), m_numberOfEdges(72u) { }
 
-	void setNumberOfEdges(std::size_t numberOfEdges) { m_numberOfEdges = (numberOfEdges < 4u) ? 3u : numberOfEdges; priv_update(); }
+	void setNumberOfEdges(std::size_t numberOfEdges) { m_numberOfEdges = (numberOfEdges < 14u) ? 13u : numberOfEdges; priv_update(); }
 	std::size_t getNumberOfEdges() const { return m_numberOfEdges; }
 
 private:
