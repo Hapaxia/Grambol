@@ -35,5 +35,6 @@
 #include "Basics.hpp"
 #include "BasicsGradient.hpp"
 #include "CardSuits.hpp"
+#include "Icons.hpp"
 
 #endif // GRAMBOL_ALL_HPP
