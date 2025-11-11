@@ -6,6 +6,7 @@ by Hapaxia
 October 2020
 > github.com/Hapaxia  
 > mastodon.world/@hapaxia  
+> hapaxia.bsky.social  
 > twitter.com/Hapaxiation
 
 ## Introduction
@@ -18,18 +19,22 @@ Each symbol is set up in a similar way to a rectangle; it has a width and height
 
 For more information, please see the [Wiki]
 
-## Still To Come
-
-### Provided Symbol Groups
+## Provided Symbol Groups
 These are groups of symbols that can be included separately. Most will have more specific controls to allow intuitive use. These serve as both usable symbols and examples of how derived classes can build upon the base classes.
 - Basics  
 The standard basic stuff such as rectangle, ellipse, star, and rounded rectangle.
+- BasicsGradient  
+Same as Basics but adds multiple gradient types to each one.
 - Arrows  
 Multiple, customisable types.
-- Icons  
-Symbols commonly used for icons.
 - Card Suits  
 Usual symbols for the suits used in playing cards.
+- Icons  
+Symbols commonly used for icons.
+
+### Still To Come
+- Dots  
+Symbols made up of multiple dots/circles/discs.
 - Warnings  
 Symbols used for warnings.
 - Crosshairs  
