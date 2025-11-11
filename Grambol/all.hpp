@@ -33,5 +33,6 @@
 #include "bases.hpp"
 #include "Arrows.hpp"
 #include "Basics.hpp"
+#include "BasicsGradient.hpp"
 
 #endif // GRAMBOL_ALL_HPP
